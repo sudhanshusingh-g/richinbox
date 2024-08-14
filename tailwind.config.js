@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-    "./app/**/*.{js,jsx}",
-    "./src/**/*.{js,jsx}",
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
+    './src/**/*.{js,jsx}',
   ],
   prefix: "",
   theme: {
@@ -17,11 +17,6 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage: {
-        "custom-gradient":
-          "linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(11, 41, 192, 1) 30%, rgba(2, 0, 260, 1) 100%)",
-      },
-
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -79,4 +74,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+}
